@@ -1,0 +1,199 @@
+<section class="tecnologia">	<!--!-->
+		  	<a name="tecnologia"></a>	<!--Parte de arriba, se usa para el botón final!-->
+            <div class="contenedor">
+                <h2 class="titulo-tecnologia">Características de Trabajo</h2>
+                <h3 class="subtitulo-tecnologia">Conoce mi forma de trabajar</h3>
+                
+				<div class="cards">
+                    <div class="card">
+                        <img src="img/tecnología/canon.jpg" alt="">	<!--Nota: el atributo alt es necesario para el elemento <img>. !-->
+                        <h4>Canon</h4>
+						<p>Con la mejor tecnología de <b>SAMSUNG</b></p>
+                    </div>
+					
+                    <div class="card">
+                        <img src="img/tecnología/colores vibrantes.jpg" alt="">
+                        <h4>Colores vivos</h4>
+						<p>Capturas con <b>HDR</b></p>
+                    </div>
+					
+                    <div class="card">
+                        <img src="img/tecnología/cap.jpg" alt="">
+                        <h4>Tomas Perfectas</h4>
+                        <p>Escencia de momentos únicos en una captura</p>
+                    </div>
+					
+					<div class="card">
+                        <img src="img/tecnología/cam-lenta.jpg" alt="">
+                        <h4>Cámara Slow Motion</h4>
+                        <p>Capturando hasta 960 fps en <b>FULL HD</b></p>
+                    </div>
+					
+					<div class="card">
+                        <img src="img/tecnología/edit-profesional.jpg" alt="">
+                        <h4>Edición Profesional</h4>
+                        <p>Edito con los mejores programas y rápida renderización</p>
+						<p>Adobe Photoshop &ensp; Adobe Premier Pro &ensp; ETC...</p>
+                    </div>
+					
+                </div>
+            </div>
+        </section>
+		
+		
+
+				
+		
+	  <section class="intro-galeria">
+		  <a name="galeria"></a>	<!--Parte de arriba, se usa para el botón final!-->
+		  <div class="contenedor">
+			  <h2 class="titulo-tecnologia">Galería</h2>
+			  <h3 class="subtitulo-galeria">Demo de mis mejores capturas</h3>
+			  
+			  <div class="galeria">
+				  <div class="imagenes none">
+					  <a href="galería/index-galeria/index-album/subpaginas/1/album1.html" target="_blank"><img src="img/intro-galeria/1.jpg" alt=""></a>
+				  </div>
+				  <div class="imagenes">
+					  <a href="galería/index-galeria/index-album/subpaginas/2/album2.html" target="_blank"><img src="img/intro-galeria/natural.png" alt=""></a>
+				  </div>
+				  <div class="imagenes">
+					  <a href="galería/index-galeria/galeria.html"><img src="img/intro-galeria/3.jpg" alt="">
+					  <div class="encima">
+						  <img class="logo" src="img/logo/logo.png" alt="logo">	<!--Logo Principal, en el menú!-->
+						  <h2>TWL<br>Demo Galería<br><br><i>Robert Farrera</i></h2>
+					  </div></a>
+				  </div>
+				  <div class="imagenes">
+					  <a href="galería/index-galeria/index-album/subpaginas/4/album4.html" target="_blank"><img src="img/intro-galeria/4.jpg" alt=""></a>
+				  </div>
+				  <div class="imagenes none">
+					  <a href="galería/index-galeria/index-album/subpaginas/5/album5.html" target="_blank"><img src="img/intro-galeria/humanidad.gif" alt=""></a>
+				  </div>
+				  
+			  </div>
+		  </div>
+		</section>
+		
+		
+		<section class="paquetes-fotograficos">
+			<a name="paquetes-fotograficos"></a>	<!--Parte de arriba, se usa para el botón final!-->
+            <div class="contenedor">
+                <h2 class="titulo-paq_fotograficos">Paquetes Fotográficos</h2>
+                <h3 class="subtitulo-paq_fotograficos">Te ofrezco la mejor calidad a un precio altamente accesible</h3>
+                
+				<div class="cajas">
+                    <div class="caja">
+						<button class="surgir" onclick="mostrarMensaje()">
+							<img src="img/paquetes-fotograficos/sesion-de-fotos-personales.jpg" alt="">	<!--Nota: el atributo alt es necesario para el elemento <img>. !-->
+							<span class="mostrar-anuncio">Usted a agregado exitosamente un paquete a su carrito!</span>
+						</button>
+                        <h4>Sesión Fotográfica Personal</h4>
+						<p>Precio: $3,500.00 (Tres mil quinientos pesos 00/100 M.N.)</p>
+						<a href="404.png"><p>Más info.</p></a>
+                    </div>
+					
+                    <div class="caja">
+						<button class="surgir" onclick="mostrarMensaje()">
+							<img src="img/paquetes-fotograficos/sesion-de-fotos-mascotas.jpg" alt="">	<!--Nota: el atributo alt es necesario para el elemento <img>. !-->
+							<span class="mostrar-anuncio">Usted a agregado exitosamente un paquete a su carrito!</span>
+						</button>
+                        <h4>Sesión Fotográfica para Macotas</h4>
+						<p>Precio: $2,500.00 (Dos mil quinientos pesos 00/100 M.N.)</p>
+						<a href="404.png"><p>Más info.</p></a>
+                    </div>
+					
+                    <div class="caja">
+						<button class="surgir" onclick="mostrarMensaje()">
+							<img src="img/paquetes-fotograficos/toma-aerea.png" alt="" >	<!--Nota: el atributo alt es necesario para el elemento <img>. !-->
+							<span class="mostrar-anuncio">Usted a agregado exitosamente un paquete a su carrito!</span>
+						</button>
+                        <h4>Capturas Aéreas</h4>
+						<p>Precio: $4,500.00 (Cuatro mil quinientos pesos 00/100 M.N.)</p>
+						<a href="404.png"><p>Más info.</p></a>
+                    </div>
+					
+					<div class="caja">
+						<button class="surgir" onclick="mostrarMensaje()">
+							<img src="img/paquetes-fotograficos/sesion-de-fotos-graduacion.jpg" alt="">	<!--Nota: el atributo alt es necesario para el elemento <img>. !-->
+							<span class="mostrar-anuncio">Usted a agregado exitosamente un paquete a su carrito!</span>
+						</button>
+                        <h4>Paquete para graduación</h4>
+						<p>Precio: $3,100.00 (Tres mil cien pesos 00/100 M.N.)</p>
+						<a href="404.png"><p>Más info.</p></a>
+                    </div>
+					
+					<div class="caja">
+						<button class="surgir" onclick="mostrarMensaje()">
+							<img src="img/paquetes-fotograficos/camara-lenta.jpg" alt="">	<!--Nota: el atributo alt es necesario para el elemento <img>. !-->
+							<span class="mostrar-anuncio">Usted a agregado exitosamente un paquete a su carrito!</span>
+						</button>
+						<h4>Sesión Especial "<i>Slow Motion</i>"</h4>
+						<p>Precio: $1,500.00 (Mil quinientos pesos 00/100 M.N.)</p>
+						<a href="404.png"><p>Más info.</p></a>
+                    </div>
+					<div class="caja">
+						<button class="surgir" onclick="mostrarMensaje()">
+							<img src="img/paquetes-fotograficos/sesion-de-fotos-familiar.jpg" alt="">	<!--Nota: el atributo alt es necesario para el elemento <img>. !-->
+							<span class="mostrar-anuncio">Usted a agregado exitosamente un paquete a su carrito!</span>
+						</button>
+						<h4>Sesión Fotográfica Familiar</h4>
+						<p>Precio: $7,250.00 (Siete mil dosciento cincuenta pesos 00/100 M.N.)</p>
+						<a href="404.png"><p>Más info.</p></a>
+                    </div>
+					<div class="caja">
+						<button class="surgir" onclick="mostrarMensaje()">
+							<img src="img/paquetes-fotograficos/video-boda.png" alt="">	<!--Nota: el atributo alt es necesario para el elemento <img>. !-->
+							<span class="mostrar-anuncio">Usted a agregado exitosamente un paquete a su carrito!</span>
+						</button>
+						<h4>Realización de Película <i>4K</i></h4>
+						<p>Precio: $24,000.00 (Veinti cuatro mil pesos 00/100 M.N.)</p>
+						<a href="404.png"><p>Más info.</p></a>
+					</div>
+					<div class="caja">
+						<button class="surgir" onclick="mostrarMensaje()">
+							<img src="img/paquetes-fotograficos/edit-v_f.png" alt="">	<!--Nota: el atributo alt es necesario para el elemento <img>. !-->
+							<span class="mostrar-anuncio">Usted a agregado exitosamente un paquete a su carrito!</span>
+						</button>
+						<h4>Edición y Renderización de material propio</h4>
+						<p>Precio: $14,000.00 (Catorce mil pesos 00/100 M.N.)</p>
+						<a href="404.png"><p>Más info.</p></a>
+					</div>				
+					
+              </div>
+				<p style="text-align: center; padding-bottom: 4px; border: 3px;">Existen más paquetes, para más info. contáctame.</p>
+				<p class="paq-fotograficos-aviso">La parte de Compra de Paquetes Fotográficos por el momento se encuentra en versión Beta (Prueba)<br>Muy pronto pordrás apartar tus paquetes de forma On-Line</p>
+            </div>
+		
+		</section>
+		
+		
+		<!--
+		<section class="reconocimientos">
+			<a name="reconocimientos"></a>	<!--Parte de arriba, se usa para el botón final
+
+			<div class="contenedor">
+                <h2 class="titulo-reconocimientos">Reconocimientos</h2>
+                <h3 class="subtitulo-reconocimientos"><i>Único fotografo poblano con reconocimiento de National Geographic</i></h3>
+				
+				<div class="apartados">
+					<div class="apartado">
+						<h4 class="p-reconocimiento">Infrarrojo</h4>					
+						<a href="http://www.centrodememoriahistorica.gov.co/descargas/convocatoriaInfrarojo/cartilla1.pdf"><img src="img/reconocimientos/infrarrojo.PNG" alt=""></a>
+					</div>
+					<div class="apartado">
+						<h4 class="p-reconocimiento">National Geographic Traveler Photo</h4>						
+						<a href="https://hipertextual.com/2015/08/ganadoras-del-national-geographic-traveler"><img src="img/reconocimientos/nationalgeographic.jpg" alt=""></a>
+					</div>
+					<div class="apartado">
+						<h4 class="p-reconocimiento">The Nikon Photo</h4>
+						<a href="http://www.nikon-photocontest.com/en/"><video class="video-reconocimiento" src="img/reconocimientos/clip/Nikon Photo Contest 2018-2019 Promotion Movie.mp4" autoplay loop muted></video></a>
+					</div>
+				</div>
+				<h3 class="adicional-reconocimientos unico">100% Mexicano y poblano</h3>
+			</div>
+		</section>
+		
+		!-->
+		
+		

@@ -1,0 +1,175 @@
+* {/*Formateo de página*/
+    margin: 0;	/*Margen*/
+    padding: 0;	/*Espacio entre elementos*/
+    box-sizing: border-box;	/*El ancho especificado sea el equivalente al ancho total*/
+}
+
+/*Apartado de carga al inicio de la página*/
+
+/*#contenedor_carga{
+	background-color: rgba(250, 240, 245, 0.8);	/*Fondo del contenedor de carga*/
+/*	width: 100%;	/*Largo*/	
+/*	height: 100%;	/*Altura*/
+/*	position: fixed;	/*Posicionado con relación al bloque contenedor inicial(fija-estático)*/
+/*	transition: all 1s ease;	/* transición a todas las propiedades, tiempo en (s), especifica la velocidad de la animación*/
+/*	z-index: 10000;	/*Para posicionar sobre todos los elementos de la página*/
+/*}
+/*#carga{
+	border: 15px solid rgba(0,0,0,0.20);	/*Contorno de la circunferencia de carga*/
+/*	border-top-color: rgba(56,183,244,1.00); 	/*El color de lo cargado*/
+/*	border-top-style: groove;	/*Borde hundido, que visualmente parece que se encuentra por debajo del nivel de la superficie de la pantalla*/
+/*	width: 100px;	/*Largo*/	
+/*	height: 100px;	/*Altura*/
+/*	border-radius: 100%;	/*El radio del dibujo de carga*/
+/*	position: absolute;	/*Se fija mediante unas coordenadas, que vienen dadas por los atributos top y left.*/
+/*	top: 0px;	/*Especifica parte de la posición de un elemento posicionado*/
+/*	right: 0px;	/*Posición del elememnto*/
+/*	left: 0px;	/*Posición del elemento*/
+/*	bottom: 0;	/*Especifica parte de la posición de un elemento*/
+/*	margin: auto;	/*Margen automático*/
+/*	animation: rotar 1.5s linear infinite; /*Función, tiempo, tipo, hasta*/
+/*}
+
+@/*keyframes rotar{
+/*	from{
+/*		transform: rotate(0deg);	/*Desde donde iniciar*/
+/*		}
+/*	to{
+/*		transform: rotate(360deg);	/*Cuanto debe girar*/
+/*		}
+/*	}
+
+
+
+
+/*Formato universal para todo el body*/
+
+body{
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";	/*Tipo de letra para todo el cuerpo*/
+    font-size: 15px;	/*Tamaño de letra para todo el cuerpo*/
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    background: rgba(32,32,32,1.00);
+    color: rgba(255,255,255,1.00);   
+    
+}
+
+footer p{
+	text-align: justify;
+}
+
+.contenedor-footer-total{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.contenedor-cuerpo{
+	flex-wrap: wrap;	/*Especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas (Los elementos flex son colocados en varias líneas.)*/
+    justify-content: space-around;	/*Los items flex se distribuyen uniformemente sobre la línea.*/
+    display: flex;
+}
+
+.columna1, .columna2, .columna3{
+	padding: 10px;
+    max-width: 400px;
+}
+
+.columna1 h1{
+    font-size: 22px;
+}
+
+.columna1 p{
+    font-size: 14px;
+    color: rgba(199,199,199,1.00);
+    margin-top: 20px;
+}
+
+.columna2 h1{
+    font-size: 22px;
+	align-self: center;
+}
+
+.row, .row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: rgba(199,199,199,1.00);
+}
+
+.columna3 h1{
+    font-size: 22px;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.contedor-footer{
+    width: 100%;  
+    background: rgba(16,16,16,1.00);
+}
+
+.pie{
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.d-r{
+	width: 100%;
+    color: rgba(199,199,199,1.00);
+}
+
+.d-r a{
+    text-decoration: none;
+    color: rgba(255,255,255,1.00);
+    font-weight: bold;
+}
+
+
+.footer-links{
+	margin-right: 5%;
+	font-size: 20px;
+    color: rgba(255,255,255,1.00);
+	display: flex;
+	float: right;
+	position: relative;
+}
+.footer-links a{
+	font-size: 15px;
+	color: rgba(132,132,132,1.00);
+}
+
+.footer-links a:hover{
+	color: rgba(201,201,201,1.00);
+	cursor: pointer;
+}
+/* Responsivo */

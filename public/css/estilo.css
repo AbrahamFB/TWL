@@ -1,0 +1,1175 @@
+* {/*Formateo de página*/
+    margin: 0;	/*Margen*/
+    padding: 0;	/*Espacio entre elementos*/
+    box-sizing: border-box;	/*El ancho especificado sea el equivalente al ancho total*/
+}
+
+/*Apartado de carga al inicio de la página*/
+
+/*#contenedor_carga{
+	background-color: rgba(250, 240, 245, 0.8);	/*Fondo del contenedor de carga*/
+/*	width: 100%;	/*Largo*/	
+/*	height: 100%;	/*Altura*/
+/*	position: fixed;	/*Posicionado con relación al bloque contenedor inicial(fija-estático)*/
+/*	transition: all 1s ease;	/* transición a todas las propiedades, tiempo en (s), especifica la velocidad de la animación*/
+/*	z-index: 10000;	/*Para posicionar sobre todos los elementos de la página*/
+/*}
+/*#carga{
+	border: 15px solid rgba(0,0,0,0.20);	/*Contorno de la circunferencia de carga*/
+/*	border-top-color: rgba(56,183,244,1.00); 	/*El color de lo cargado*/
+/*	border-top-style: groove;	/*Borde hundido, que visualmente parece que se encuentra por debajo del nivel de la superficie de la pantalla*/
+/*	width: 100px;	/*Largo*/	
+/*	height: 100px;	/*Altura*/
+/*	border-radius: 100%;	/*El radio del dibujo de carga*/
+/*	position: absolute;	/*Se fija mediante unas coordenadas, que vienen dadas por los atributos top y left.*/
+/*	top: 0px;	/*Especifica parte de la posición de un elemento posicionado*/
+/*	right: 0px;	/*Posición del elememnto*/
+/*	left: 0px;	/*Posición del elemento*/
+/*	bottom: 0;	/*Especifica parte de la posición de un elemento*/
+/*	margin: auto;	/*Margen automático*/
+/*	animation: rotar 1.5s linear infinite; /*Función, tiempo, tipo, hasta*/
+/*}
+
+@/*keyframes rotar{
+/*	from{
+/*		transform: rotate(0deg);	/*Desde donde iniciar*/
+/*		}
+/*	to{
+/*		transform: rotate(360deg);	/*Cuanto debe girar*/
+/*		}
+/*	}
+
+
+
+
+/*Formato universal para todo el body*/
+
+body{
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";	/*Tipo de letra para todo el cuerpo*/
+    font-size: 15px;	/*Tamaño de letra para todo el cuerpo*/
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+
+/*Encabezado*/
+
+header{
+    z-index: 100000;	/*Para posicionar sobre todos los elementos de la página*/
+    height: 850px;	/*Altura*/
+    width: 100%;	/*Largo*/
+    /*background-image: url("../img/fondo-head/orig_7871.gif");*/
+    /*background-image: url("https://correobuap-my.sharepoint.com/personal/abraham_floresb_alumno_buap_mx/Documents/TWL/img/fondo-head/snowman-2082688.jpg");
+    background-image: url("../img/fondo-head/HD/2020/Abril/sunflower-3566523.jpg");*/
+    background-image: url("http://drive.google.com/uc?export=view&id=13OBWzph2AmmK1njCVoYOv0ISVNEZNiWl");
+    background-attachment: fixed;	/*Permanezca fija*/
+    background-position: center;	/*Posicionar la imagen en el centro*/
+    background-size: cover;	/*1especificar el tamaño de las imágenes de fondo, 2escalar la imagen al mayor tamaño posible sin estirarla*/
+    position: relative;	/*Posición reajustable*/
+    overflow: hidden;	/*Recortar el contenido y no mostrar la barras*/
+	list-style: none;	/*No mostrar en forma de lista*/
+    text-align: center;	/*Alineación del texto en el Haeder*/
+}
+
+header #titulo{
+	text-shadow: 20px 1px 100px rgba(0,0,0,1.00);
+	text-shadow: 0 0 100px rgba(0,0,0,1.00);
+    color: rgba(255,255,255,1.00);	/*Color de la letra del Título*/
+    font-size: 85px;	/*Tamaño del Título*/
+}
+
+header #slogan{
+    font-size: 25px;	/*Tamaño del Slogan*/
+    font-weight: 300;	/*Establecer el grosor del Slogan*/
+    margin-bottom: 32px;	/*Espacio en la parte inferior*/
+	color:rgba(255,255,255,1.00);
+	text-shadow: 2px 3px 15px rgba(0,0,0,1.00);	
+}
+
+header #logo{
+	box-shadow: -5px 10px 120px 10px rgba(0,0,0,1.00);
+	border-radius: 50%;
+	width: 120px;	/*Largo*/	
+	height: 120px;	/*Altura*/	
+	/*margin-top: 115px; /*Anchura del margen superior*/
+	margin-top: 280px; /*Anchura del margen superior*/
+}
+
+header .boton{
+	margin-top: 8px;
+    display: inline-block;	/*Elementos en linea*/
+    padding: 10px;	/*Establecer el espacio de relleno por todos los lados de los botones del menú*/
+    width: 150px;	/*Largo*/
+    border: 2px solid rgba(255,255,255,0.35);	/*Borde de los botones del menú (grosor, selector de color, color)*/
+    color: rgba(255,255,255,1.00);	/*Color de la letra de los botones del menú*/
+    font-size: 16px;	/*Tamaño de letra de los botones del menú*/
+    text-align: center;	/*Alineación del texto de los botones del menú*/
+    text-decoration: none;	/*Ninguna decoración*/
+	border-radius: 16px;	/*Borde*/
+	transition: all 300ms;	/*Efecto de los botones*/
+}
+
+header .menu-principal a:hover{	/*Solo selecciona a  /a/*/
+	color: rgba(255,255,255,1.00);	/*Color de las letras del menu(cuando el mouse encima*/
+	background: rgba(0,0,0,0.49);	/*Color que aparece cuando se pasa el mouse*/
+	cursor: pointer;	/*Especifica el tipo de cursor que se mostrará cuando este se encuentre sobre /a/ el tipo es una mano*/
+	transition: all 300ms;	/*Efecto de los botones*/
+}
+
+header .menu-social{
+	margin-top: 30px;	/*Anchura del margen superior*/
+}
+
+header .menu-social a{	/*Selecciona todo lo que esta dentro de /a/*/
+	color: white;	/*Color de los iconos sociales*/
+	list-style: none;	/*Estilo lista no*/
+	padding: 20px; /*Espacio entre elementos*/
+}
+
+header .menu-social a:hover{	/*Solo selecciona a  /a/*/
+	color: rgba(255,255,255,1.00);	/*Relleno*/
+	border-left-style: ridge;	/*Efecto borde izquierdo*/
+	font-size: 25px;	/*Agrande cuando se selecciona*/
+	background: rgba(0,0,0,0.66); /*Cambia de color*/
+	cursor: pointer;	/*Especifica el tipo de cursor que se mostrará cuando este se encuentre sobre /a/ el tipo es una mano*/
+	transition: all 300ms;	/*Efecto de movimiento*/
+}
+
+
+.social-bar-lateral {
+	position: fixed;
+	left: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 1000;
+}
+
+.ico {
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+}
+
+.social-bar-lateral .icon-facebook-1{
+	background: #2E406E;
+}
+
+.social-bar-lateral .icon-youtube {
+	background: #E83028;
+}
+
+.social-bar-lateral .icon-instagram {
+	background: #3F60A5;
+}
+
+.ico:first-child {
+	border-radius: 0 1rem 0 0;
+}
+
+.ico:last-child {
+	border-radius: 0 0 1rem 0;
+}
+
+.social-bar-lateral .ico:hover {
+	padding-right: 2rem;
+	border-radius: 0 1rem 1rem 0;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.42);
+}
+
+
+/*Uso universal en toda la página*/
+
+.icon-up-circle{	/*Botón atajo direccionado a la parte inicial*/
+	z-index: 10000;	/*Para posicionar sobre todos los elementos de la página*/
+	border-radius: 9px;	/*Borde*/
+	padding: 15px;	/*Espacio entre elementos*/
+	background-color: rgba(0,0,0,0.40);	/*Color del botón*/
+	font-size: 10px;	/*Tamaño del botón*/
+	color: rgba(255,255,255,1.00);	/*Color del icono*/
+	cursor: pointer; /*Especifica el tipo de cursor que se mostrará cuando este se encuentre sobre /a/ el tipo es una mano*/
+	position: fixed;	/*Posicionado con relación al bloque contenedor inicial(fija-estático)*/
+	bottom: 15px;	/*Sube la caja hasta que su borde inferior x de distancia de la posición que originalmente tenía ese borde inferior*/
+	right: 15px;	/*Margen derecho*/
+}
+/*
+.sesgoarriba-izq, .sesgoabago-izq{
+    z-index: 10;	/*Para posicionar sobre todos los elementos de la página
+    position: absolute;	/*Se fija mediante unas coordenadas, que vienen dadas por los atributos top y left.*/
+  /*  top: 0;	/*Especifica parte de la posición de un elemento posicionado*/
+    /*left: 0;	/*Especifica parte de la posición de un elemento posicionado*/
+	/*border-top-width: 35vh;	/*Establece la anchura del borde superior de los elementos*/	/*35vh = 35% de la altura del viewport (pantalla)*/
+/*	border-right-width: 100vw;	/*Establece la anchura del borde derecho de los elementos*/	/*100vw = 100% del ancho del viewport (pantalla)*/
+/*	border-bottom-width: 0;	/*Establece la anchura del borde inferior de los elementos*/
+/*	border-left-width: 0;	/*Establece la anchura del borde izquierdo de los elementos*/
+  /*  border-style: solid;	/*Establecer el estilo de algunos o todos los bordes de un elemento (Borde continuo, formado por una línea recta continua*/
+    /*border-color: rgba(255,255,255,1.00) transparent transparent transparent;	/*Establecer el estilo de algunos o Atajo para definir el color de los cuatro bordes para el sesgoabajo-der, sesgoarriba-der*/
+}
+
+/*
+.sesgoabajo-der, .sesgoarriba-der{
+    z-index: 10;	/*Para posicionar sobre todos los elementos de la página*/
+    /*position: absolute;	/*Se fija mediante unas coordenadas, que vienen dadas por los atributos top y left.*/
+/*    bottom: 0;	/*Especifica parte de la posición de un elemento*/
+  /*  left: 0;	/*Especifica parte de la posición de un elemento posicionado*/
+	/*border-top-width: 0;	/*Establece la anchura del borde superior de los elementos*/
+	/*border-right-width: 0;	/*Establece la anchura del borde derecho de los elementos*/
+/*	border-bottom-width: 35vh;	/*Establece la anchura del borde inferior de los elementos*/	/*35vh = 35% de la altura del viewport (pantalla)*/
+	/*border-left-width: 100vw;	/*Establece la anchura del borde izquierdo de los elementos)*/	/*100vw = 100% del ancho del viewport (pantalla)*/
+  /*  border-style: solid;	/*Establecer el estilo de algunos o todos los bordes de un elemento (Borde continuo, formado por una línea recta continua*/
+/*    border-color: transparent transparent rgba(255,255,255,1.00) transparent;	/*Establecer el estilo de algunos o Atajo para definir el color de los cuatro bordes para el sesgoabajo-der, sesgoarriba-der*/
+}
+
+
+.contenedor{
+    width: 100%;	/*Largo*/
+    max-width: 100%;	/*Largo máximo*/
+    margin: auto;	/*Margen automático*/
+    overflow: hidden;	/*Recortar el contenido y no mostrar la barras*/
+    padding: 10px 0;	/*Espacio entre elementos*/
+    background-color: rgba(32,32,32,1.00);
+
+}
+
+
+/* Main */
+
+h2.titulo-tecnologia, h2.titulo-galeria, h2.titulo-bienvenida, h2.titulo-reconocimientos, h2.titulo-paq_fotograficos{
+	color: rgba(255,255,255,1.00);
+	text-shadow: 0 0 80px rgba(0,0,0,1.00);
+	width: auto;
+	height: auto;
+    margin-bottom: 1.5%;	/*Espacio en la parte inferior*/
+	font-family:'Bree Serif', arial; 
+	font-weight:bold;	/*Establecer el grosor del Slogan*/
+	text-align: center;
+	font-size: 65px;
+}
+
+h3.subtitulo-tecnologia, h3.subtitulo-galeria, h3.subtitulo-reconocimientos, h3.subtitulo-bienvenida, h3.subtitulo-paq_fotograficos{
+    font-size: 24px;	/*Tamaño de la letra del titulo de subtitulo-tec*/
+    font-weight: 17px;	/*Especifica el peso o grueso de la letra*/
+    text-align: center;	/*Establece la alineación del contenido de un elemento de bloque*/
+    margin-bottom: 2%;	/*Espacio en la parte inferior*/
+}
+
+.cards{
+    width: 100%;	/*Largo*/
+    margin: auto;	/*Margen automático*/
+    display: flex;	/*Alterar el ancho y alto de sus elementos para ajustarse lo mejor posible al espacio disponible en cualquier dispositivo*/
+    flex-wrap: wrap;	/*Especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas (Los elementos flex son colocados en varias líneas.)*/
+    justify-content: space-around;	/*Los items flex se distribuyen uniformemente sobre la línea.*/
+}
+
+.card{
+    margin: 20px 0; /*Margen de card*/	
+    width: 30%;	/*Largo*/
+    height: 270px;	/*Alto*/
+    text-align: center;	/*Establece la alineación del contenido de un elemento de bloque*/
+    padding: 20px;	/*Espacio entre elementos*/
+    box-shadow: 0px 0px 50px 0 rgba(52, 73, 94, 0.849);	/*<offset-x> <offset-y> <blur-radius> <spread-radius> <color de sombra>?*/
+}
+
+.cards img{
+    width: 150px;	/*Largo*/
+    height: 150px;	/*Alto*/
+    object-fit: cover;	/*Especifica como el contenido de un elemento remplazado debería adaptarse según el alto y ancho de su contenedor (tamaño de cards se resuelve como una restricción de cobertura contra el ancho y la altura utilizados del elemento.)*/
+	border-radius: 100%;	/*Borde*/
+}
+
+
+
+
+.video-bienvenida{
+	object-fit: cover;	/*Especifica como el contenido de un elemento remplazado debería adaptarse según el alto y ancho de su contenedor (tamaño del video-bienvenida se resuelve como una restricción de cobertura contra el ancho y la altura utilizados del elemento.)*/
+    height: auto;	/*Alto*/
+    position: relative;	/*Posición reajustable*/
+    background-attachment: fixed;	/*Permanezca fija*/
+    background-position: center;	/*Posicionar la imagen en el centro*/
+    padding-top: -1000px;	/*Establece la anchura de la zona de relleno superior de los elementos*/
+	background-repeat: round;/*Repetir en todo el contenedor*/
+}
+
+ .video-bienv{
+	 margin-top: 20px;	/*Anchura del margen superior*/
+	 align-items: center;	/*Alinea los elementos de la línea flexible*/
+	 width: 100%;	/*Largo*/
+	 height: 100%;	/*Alto*/
+}
+
+.video-promocion{
+	text-align: center;	/*Establece la alineación del contenido de un elemento de bloque*/
+	font-size: 55px;	/*Tamaño de la letra del titulo de video-promocion*/
+}
+
+
+
+
+.galeria{
+     box-shadow: 40px -20px 50px 0 rgba(52, 73, 94, 0.849);	/*<offset-x> <offset-y> <blur-radius> <spread-radius> <color de sombra>?*/
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.imagenes{
+	z-index: 100;	/*Para posicionar sobre todos los elementos de la página*/
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes img{
+	
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagenes video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagenes:hover {
+	filter: opacity(.7);
+}
+
+.encima{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+}
+
+.encima-letra{
+    display:none;
+}
+
+.encima-letra h2:hover{
+ position: relative;
+    top: 45%;
+    text-align: center;
+    color: rgba(255,255,255,1.00);}
+
+.encima h2 {
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: rgba(255,255,255,1.00);
+}
+
+
+
+.encima div{
+    position: relative;
+    display: block;
+    top: 46%;
+    width: 40px;
+    height: 5px;
+    background: rgba(255,255,255,1.00);
+    margin: auto;
+}
+
+
+
+
+.cajas{
+    width: 100%;	/*Largo*/
+    margin: auto;	/*Margen automático*/
+    display: flex;	/*Alterar el ancho y alto de sus elementos para ajustarse lo mejor posible al espacio disponible en cualquier dispositivo*/
+    flex-wrap: wrap;	/*Especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas (Los elementos flex son colocados en varias líneas.)*/
+    justify-content: space-around;	/*Los items flex se distribuyen uniformemente sobre la línea.*/
+}
+
+.caja{
+    margin: 20px 0; /*Margen de card*/	
+    width: 30%;	/*Largo*/
+    height: 320px;	/*Alto*/
+    text-align: center;	/*Establece la alineación del contenido de un elemento de bloque*/
+    padding: 20px;	/*Espacio entre elementos*/
+    box-shadow: 0px 7px 40px 5px rgba(0,0,0,0.85);	/*<offset-x> <offset-y> <blur-radius> <spread-radius> <color de sombra>?*/
+}
+
+.cajas img{
+    width: auto;	/*Largo*/
+    height: 150px;	/*Alto*/
+    object-fit: cover;	/*Especifica como el contenido de un elemento remplazado debería adaptarse según el alto y ancho de su contenedor (tamaño de cards se resuelve como una restricción de cobertura contra el ancho y la altura utilizados del elemento.)*/
+}
+
+.paquetes-fotograficos h4{
+	margin-top: 2%;
+	font-size: 22px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+.paquetes-fotograficos p{
+	font-size: 16px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+.caja a:hover{
+	z-index: 10000;
+}
+.caja img:hover{
+	cursor: pointer;
+	filter: opacity(.75);
+}
+
+/*Contenedor del Mensaje*/
+.surgir{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*Estado del mensaje actual*/
+.surgir .mostrar-anuncio{
+    visibility: hidden;
+    width: 160px;
+    background-color: rgba(0,0,0,0.64);
+    color: rgba(255,255,255,1.00);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: 50%;
+}
+
+/* Muestra la notificación de compra*/
+.surgir .mostrar-anuncio::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+}
+
+/* Cambio para mostrar/ocultar el contenedor del Mensaje*/
+.surgir .mostrar {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Animación del Mensaje */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;
+	} 
+    to {opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;
+	}
+    to {opacity:1;
+	}
+}
+
+.paq-fotograficos-aviso{
+	margin: 2px 3px 2px 3px;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	height: auto;
+	width: auto;
+	background-color: rgba(0,0,0,0.63);
+	text-align: center;
+	color: rgba(255,255,255,0.75);
+}
+
+
+
+
+.reconocimientos{
+    height: 875px;	/*Alto*/
+    position: relative;	/*Posición reajustable*/
+    background-image: url("file:///C:/Users/afb19/OneDrive/Escritorio/TWL/index/img/reconocimientos/fondo/estudiofotografico.jpg");
+    background-position: center;	/*Posicionar la imagen en el centro*/
+    overflow: hidden;	/*Recortar el contenido y no mostrar la barras*/
+    background-attachment: fixed;	/*Permanezca fija*/
+    padding-top: 15px;	/*Establece la anchura de la zona de relleno superior de los elementos*/
+}
+
+ .video-reconocimiento{
+	 overflow: hidden;
+	 align-items: center;	/*Alinea los elementos de la línea flexible*/
+	 width: auto;	/*Largo*/
+	 height: auto;	/*Alto*/
+}
+
+.apartados{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    width: auto;
+    justify-content: space-between;
+}
+
+.apartado{
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+video.apartado img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.p-reconocimiento{
+	border-radius: 25% 25% 0 0;
+	background-color: rgba(0,0,0,0.50);
+	color: rgba(255,255,255,1.00);
+	text-align: center;
+}
+
+h4.p-reconocimiento{
+	font-size: 25px;
+}
+
+.adicional-reconocimientos{
+	float: right;
+	font-size: 24px;
+    font-weight: 300;
+}
+
+
+
+
+.Subtitulo-Opinion p{
+    width: auto;
+	height: auto;
+    /*size: 400%;*/
+    font-size: 300%;
+    text-align: center;
+    color: rgba(255,255,255,1.00);
+	text-shadow: 0 0 32px rgba(251,251,251,1.00);
+}
+
+
+
+
+
+.contacto{
+	width: 100%;
+    height: 30%;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Informacion de Contacto*/
+.breve-informacion-contact:before{	/*--Se aplica despues*/
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6  );
+}
+
+.breve-informacion-contact{
+    width: 38%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/fondo-contacto/3.jpg");
+
+	background-position: center center;
+}
+
+.info_title, .info_items{
+    position: relative;
+    z-index: 100;
+    color: rgba(255,255,255,1.00);
+}
+
+.info_title{
+    
+}
+
+.info_title span{
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.info_title h2{
+	margin-top: 40px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.info_items p{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info_items img{
+	max-height: 40px;
+    height: 30px;
+}
+
+
+/* Formulario de contacto*/
+
+.contacto{
+    margin-top: 1%;
+}
+
+
+form.form_contacto{
+    background-image: url("../img/fondo-contacto/layer.jpg"); 
+	background-color: rgba(0,0,0,0.20);
+    width: 62%;
+    padding: 30px 40px;
+    z-index: 1000000;
+}
+
+form.form_contacto h2{
+	font-size: 35px;
+	font-weight: 600;
+	color: rgba(255,255,255,1.00);
+	margin-bottom: 30px;
+}
+
+form.form_contacto .user_info{
+    display: flex;
+    flex-direction: column;
+}
+
+form.form_contacto label{
+    font-weight: 600;
+}
+
+form.form_contacto input, form.form_contacto textarea{
+    width: 100%;
+    padding: 8px 0px 5px;
+    margin-bottom: 20px;
+
+    border: none;
+    border-bottom: 2px solid rgba(209,209,209,1.00);
+
+    font-family: 'Open sans';
+	color: rgba(90,90,90,1.00);
+	font-size: 14px;
+	font-weight: 400;
+}
+
+form.form_contacto textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+form.form_contacto input[type="button"]{
+    width: 180px;
+	background: rgba(0,0,0,0.50);
+	padding: 10px;
+	border: none;
+	border-radius: 25px;
+    align-self: flex-end;
+    color: rgba(255,255,255,0.90);
+	font-family: 'Open sans';
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+form.form_contacto input[type="button"]:hover{
+    background: rgba(0,0,0,0.75);
+}
+
+/* Ventana de errores*/
+.modal_wrap{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje_modal{
+    background: rgba(255,255,255,1.00);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    width: 400px;
+    padding: 30px 20px 15px;
+}
+
+.mensaje_modal h3{
+    text-align: center;
+    font-family: 'Ubuntu';
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.mensaje_modal h3:after{
+    content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: rgba(197,197,197,1.00);
+	margin: 10px 0px 15px;
+}
+
+.mensaje_modal p{
+    font-size: 16px;
+    color: rgba(96,96,96,1.00);
+}
+
+.mensaje_modal p:before{
+    content: "\f00d";
+    font-family: FontAwesome;
+    display: inline-block;
+    color: rgba(226,81,81,1.00);
+    margin-right: 8px;
+}
+
+#btnClose{
+    display: inline-block;
+	padding: 3px 10px;
+	margin-top: 10px;
+	background: rgba(226,81,81,1.00);
+	color: rgba(255,255,255,1.00);
+	border: 2px solid #B14141;
+	cursor: pointer;
+	float: right;
+}
+
+
+.contenedor-facebook{
+    width: 100%;
+        vertical-align: middle;
+        text-align: center; /* requerido para alineación horizontal */
+}
+
+.fb-page{
+    z-index: 100000000;
+    width: 100%;
+   display: inline-block;
+        text-align: left; /* requerido para volver a alinear texto izquierda */
+}
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    background: rgba(32,32,32,1.00);
+    color: rgba(255,255,255,1.00);   
+    
+}
+
+footer p{
+	text-align: justify;
+}
+
+.contenedor-footer-total{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.contenedor-cuerpo{
+	flex-wrap: wrap;	/*Especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas (Los elementos flex son colocados en varias líneas.)*/
+    justify-content: space-around;	/*Los items flex se distribuyen uniformemente sobre la línea.*/
+    display: flex;
+}
+
+.columna1, .columna2, .columna3{
+	padding: 10px;
+    max-width: 400px;
+}
+
+.columna1 h1{
+    font-size: 22px;
+}
+
+.columna1 p{
+    font-size: 14px;
+    color: rgba(199,199,199,1.00);
+    margin-top: 20px;
+}
+
+.columna2 h1{
+    font-size: 22px;
+	align-self: center;
+}
+
+.row, .row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: rgba(199,199,199,1.00);
+}
+
+.columna3 h1{
+    font-size: 22px;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.contedor-footer{
+    width: 100%;  
+    background: rgba(16,16,16,1.00);
+}
+
+.pie{
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.d-r{
+	width: 100%;
+    color: rgba(199,199,199,1.00);
+}
+
+.d-r a{
+    text-decoration: none;
+    color: rgba(255,255,255,1.00);
+    font-weight: bold;
+}
+
+
+.footer-links{
+	margin-right: 5%;
+	font-size: 20px;
+    color: rgba(255,255,255,1.00);
+	display: flex;
+	float: right;
+	position: relative;
+}
+.footer-links a{
+	font-size: 15px;
+	color: rgba(132,132,132,1.00);
+}
+
+.footer-links a:hover{
+	color: rgba(201,201,201,1.00);
+	cursor: pointer;
+}
+/* Responsivo */
+
+@media screen and (max-width : 1920px){
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2, .colum3{
+        margin-top: 40px;
+    }
+}
+
+
+@media screen and (min-width : 1920px){
+	.sesgoabajo-der, .sesgoarriba-der{
+		z-index: 10;	/*Para posicionar sobre todos los elementos de la página*/
+		border-top-width: 0;	/*Establece la anchura del borde superior de los elementos*/
+		border-right-width: 0;	/*Establece la anchura del borde derecho de los elementos*/
+		border-bottom-width: 0vh;	/*Establece la anchura del borde inferior de los elementos*/	/*35vh = 35% de la altura del viewport (pantalla)*/
+		border-left-width: 0vw;	/*Establece la anchura del borde izquierdo de los elementos)*/	/*100vw = 100% del ancho del viewport (pantalla)*/
+	}
+	
+	header{
+		height: 960px;	/*Altura*/
+		width: 100%;	/*Largo*/
+       /* background-image: url("../img/fondo-head/chinese-17422.jpg");*/
+		visibility: visible;
+		position: relative;	/*Posición reajustable*/
+		overflow: hidden;	/*Recortar el contenido y no mostrar la barras*/
+		list-style: none;	/*No mostrar en forma de lista*/
+		text-align: center;	/*Alineación del texto en el Haeder*/
+	}
+	header #logo{
+		border-radius: 50%;
+		width: 120px;	/*Largo*/	
+		height: 120px;	/*Altura*/	
+		margin-top: 300px; /*Anchura del margen superior*/
+	}
+	header .menu-social a:hover{	/*Solo selecciona a  /a/*/
+		color: rgba(255,255,255,1.00);	/*Relleno*/
+		border-left-style: ridge;	/*Efecto borde izquierdo*/
+		font-size: 25px;	/*Agrande cuando se selecciona*/
+		background: rgba(255,255,255,0.5); /*Cambia de color*/
+		cursor: pointer;	/*Especifica el tipo de cursor que se mostrará cuando este se encuentre sobre /a/ el tipo es una mano*/
+		transition: all 300ms;	/*Efecto de movimiento*/
+	}
+}
+
+@media screen and (min-width : 2000px){
+    header{
+		height: 1300px;	/*Altura*/
+		width: 100%;	/*Largo*/
+		background-image: url("https://pixabay.com/get/52e6dc414c53ac14ea9d8579c12c3477113ac3e45656774c74297bd290/christmas-4692610.jpg");
+	}
+	
+	header #titulo{
+    	text-shadow: 20px 1px 100px rgba(0,0,0,1.00);
+    	text-shadow: 0 0 100px rgba(0,0,0,1.00);
+        color: rgba(255,255,255,1.00);	/*Color de la letra del Título*/
+        font-size: 145px;	/*Tamaño del Título*/
+    }
+    
+    header #slogan{
+        font-size: 40px;	/*Tamaño del Slogan*/
+        font-weight: 300;	/*Establecer el grosor del Slogan*/
+        margin-bottom: 32px;	/*Espacio en la parte inferior*/
+    	color:rgba(255,255,255,1.00);
+    	/*text-shadow: 2px 3px 15px rgba(0,0,0,1.00);	*/
+    	text-shadow: 20px 1px 100px rgba(0,0,0,1.00);
+    	text-shadow: 0 0 100px rgba(0,0,0,1.00);
+    }
+    
+    header #logo{
+    	box-shadow: -5px 10px 120px 10px rgba(0,0,0,1.00);
+    	border-radius: 50%;
+    	width: 250px;	/*Largo*/	
+    	height: 250px;	/*Altura*/	
+    	margin-top: 320px; /*Anchura del margen superior*/
+    }
+    
+    header .boton{
+    	margin-top: 16px;
+        display: inline-block;	/*Elementos en linea*/
+        padding: 16px;	/*Establecer el espacio de relleno por todos los lados de los botones del menú*/
+        width: 300px;	/*Largo*/
+        border: 4px solid rgba(255,255,255,0.35);	/*Borde de los botones del menú (grosor, selector de color, color)*/
+        color: rgba(255,255,255,1.00);	/*Color de la letra de los botones del menú*/
+        font-size: 28px;	/*Tamaño de letra de los botones del menú*/
+        text-align: center;	/*Alineación del texto de los botones del menú*/
+        text-decoration: none;	/*Ninguna decoración*/
+    	border-radius: 32px;	/*Borde*/
+    	transition: all 300ms;	/*Efecto de los botones*/
+    }
+    
+    header .menu-principal a:hover{	/*Solo selecciona a  /a/*/
+    	color: rgba(255,255,255,1.00);	/*Color de las letras del menu(cuando el mouse encima*/
+    	background: rgba(0,0,0,0.49);	/*Color que aparece cuando se pasa el mouse*/
+    	cursor: pointer;	/*Especifica el tipo de cursor que se mostrará cuando este se encuentre sobre /a/ el tipo es una mano*/
+    	transition: all 300ms;	/*Efecto de los botones*/
+    }
+    
+    header .menu-social{
+    	margin-top: 60px;	/*Anchura del margen superior*/
+    	font-size: 20px;
+    }
+    
+    header .menu-social a{	/*Selecciona todo lo que esta dentro de /a/*/
+    	color: white;	/*Color de los iconos sociales*/
+    	list-style: none;	/*Estilo lista no*/
+    	padding: 40px; /*Espacio entre elementos*/
+    }
+    
+    header .menu-social a:hover{	/*Solo selecciona a  /a/*/
+    	color: rgba(255,255,255,1.00);	/*Relleno*/
+    	border-left-style: ridge;	/*Efecto borde izquierdo*/
+    	font-size: 50px;	/*Agrande cuando se selecciona*/
+    	background: rgba(0,0,0,0.66); /*Cambia de color*/
+    	cursor: pointer;	/*Especifica el tipo de cursor que se mostrará cuando este se encuentre sobre /a/ el tipo es una mano*/
+    	transition: all 300ms;	/*Efecto de movimiento*/
+    }
+    
+    
+    .social-bar-lateral {
+    	position: fixed;
+    	left: 0;
+    	top: 35%;
+    	font-size: 3rem;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: flex-end;
+    	z-index: 1000;
+    }
+    
+    .ico {
+    	color: white;
+    	text-decoration: none;
+    	padding: .5rem;
+    	display: flex;
+    	transition: all .5s;
+    }
+    
+    .social-bar-lateral .icon-facebook-1{
+    	background: #2E406E;
+    }
+    
+    .social-bar-lateral .icon-youtube {
+    	background: #E83028;
+    }
+    
+    .social-bar-lateral .icon-instagram {
+    	background: #3F60A5;
+    }
+    
+    .ico:first-child {
+    	border-radius: 0 1rem 0 0;
+    }
+    
+    .ico:last-child {
+    	border-radius: 0 0 1rem 0;
+    }
+    
+    .social-bar-lateral .ico:hover {
+    	padding-right: 2rem;
+    	border-radius: 0 1rem 1rem 0;
+    	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.42);
+    }
+
+	
+    header .textos{
+        margin-top: 20px;	/*Anchura del margen superior*/
+    }
+    header .titulo{
+        font-size: 12px;	/*Tamaño de la letra del titulo*/
+    }
+    header .subtitulo{
+        font-size: 50px;
+        margin-bottom: 64px;	/*Espacio en la parte inferior*/
+    }
+    .titulo-tecnologia, .titulo-bienvenida, .titulo-paq_fotograficos, .titulo-reconocimientos{
+        font-size: 90px;	/*Tamaño de la letra del titulo de sobre-nosotros*/
+    }
+    .subtitulo-tecnologia{
+        font-size: 40px;	/*Tamaño de la letra del slogan*/
+    }
+	.info_title h2{
+		font-size: 40px;
+	}
+	span.icon-user{
+		font-size: 90px;
+	}
+	.info_items p{
+		flex-wrap: wrap;
+		font-size: 24px;
+	}
+}
+
+
+@media screen and (max-width : 900px) {
+    .card, .caja{
+        width: 48%;	/*Largo*/
+    }
+}
+
+@media screen and (max-width : 610px){
+    header .textos{
+        margin-top: 13px;	/*Anchura del margen superior*/
+    }
+    header #titulo{
+		margin: 10px;
+        font-size: 50px;	/*Tamaño de la letra del titulo*/
+    }
+	header #slogan{
+		margin: 8px;
+		font-size: 17px;
+	}
+    /*.none{
+		display: none;	/*No mostrar
+    }*/
+    .imagenes{
+        flex-grow: 1;
+    }
+	
+    .card, .caja{
+        width: 90%;	/*Largo*/
+    }
+    .reconocimientos{
+        height: auto;	/*Alto*/
+    }
+    .unico{
+        display: none;	/*No mostrar*/
+    }
+    .apartado{
+        width: 90%;	/*Largo*/
+        height: 200px;	/*Ancho*/
+        margin-bottom: 50px;	/*Espacio en la parte inferior*/
+    }
+}
+
+@media screen and (max-width:380px){
+    header .textos{
+        margin-top: 10px;	/*Anchura del margen superior*/
+    }
+    header .titulo{
+        font-size: 6px;	/*Tamaño de la letra del titulo*/
+    }
+    header .subtitulo{
+        font-size: 25px;
+        margin-bottom: 32px;	/*Espacio en la parte inferior*/
+    }
+    .titulo-tecnologia, .titulo-bienvenida, .titulo-paq_fotograficos, .titulo-reconocimientos{
+        font-size: 45px;	/*Tamaño de la letra del titulo de sobre-nosotros*/
+    }
+    .subtitulo-tecnologia{
+        font-size: 20px;	/*Tamaño de la letra del slogan*/
+    }
+	.info_title h2{
+		font-size: 20px;
+	}
+	span.icon-user{
+		font-size: 45px;
+	}
+	.info_items p{
+		flex-wrap: wrap;
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width: 380px){
+	footer .columna1, .columna2, .columna3{
+		    object-fit: cover;	/*Especifica como el contenido de un elemento remplazado debería adaptarse según el alto y ancho de su contenedor (tamaño de cards se resuelve como una restricción de cobertura contra el ancho y la altura utilizados del elemento.)*/
+	}
+}

@@ -1,0 +1,12 @@
+
+.icon-up-circle { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
+.icon-down-circle { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
+.icon-user-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;'); }
+.icon-user { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe803;&nbsp;'); }
+.icon-youtube { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf167;&nbsp;'); }
+.icon-twitter { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf309;&nbsp;'); }
+.icon-facebook-1 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf30c;&nbsp;'); }
+.icon-gplus { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf30f;&nbsp;'); }
+.icon-pinterest-1 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf312;&nbsp;'); }
+.icon-instagram { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf32d;&nbsp;'); }
+.icon-skype { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf339;&nbsp;'); }

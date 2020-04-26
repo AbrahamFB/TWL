@@ -1,0 +1,41 @@
+*{
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";	/*Tipo de letra para todo el cuerpo*/
+    font-size: 15px;	/*Tamaño de letra para todo el cuerpo*/
+   /* background: rgb(0, 0, 0);*/
+    /*color: rgb(255, 255, 255);*/
+}
+
+.carousel-caption h3{
+	text-shadow: 5px 3px 3px rgba(0,0,0,0.74); 
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";	/*Familia del tipo de letra*/
+	font-size: 70px;	/*Tamaño del Titulo*/
+    font-weight: 350;	/*Establecer el grosor del Slogan*/
+    margin-bottom: 3%;	/*Espacio en la parte inferior*/
+	color: rgba(255,255,255,1.00);
+}
+
+.carousel-caption p{
+	text-shadow: 0 0 20px rgba(251,251,251,1.00), 2px -15px 20px rgba(255,255,255,1.00);
+	color: rgba(255, 255, 255, 1.00);
+	width: auto;	/*Largo*/
+	height: auto;	/*Altura*/
+	text-decoration: overline;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";	/*Familia del tipo de letra*/
+	font-size: 20px;	/*Tamaño del Slogan*/
+    font-weight: 300;	/*Establecer el grosor del Slogan*/
+    margin-bottom: 3%;	/*Espacio en la parte inferior*/
+}
+
+.item img{
+    overflow: hidden;	/*Recortar el contenido y no mostrar la barras*/
+    height: 100%;	/*Altura*/
+    width: 100%;	/*Largo*/
+}
+
+#botones{
+	display: none;
+}
+
+.audio-galeria audio{
+    display:none;
+}

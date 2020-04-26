@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>The World in my Lens</title>	<!--Título de la página!-->
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	<!--Sirve para optimizar los sitios para móviles, esta etiqueta ayuda a definir el ancho, alto y escala del área usada por el navegador para mostrar contenido-->
+    <meta charset="utf-8">	<!--Agrega compatibilidad al sitio-->
+	<meta name="description"  content="Fotografo Profesional en Puebla">	<!--Descrición del sitio-->
+	<meta name="keywords" content="Fotografía, Vídeo, Puebla, TWL" />  <!-- Ayuda al buscador a encontrar la página-->
+	<meta name="author" content="Abraham Flores B" />
+
+
+	<link rel="stylesheet" href="css/estilo.css">	<!--Hoja de estilo!-->
+	<link rel="icon" href="img/logo/logo.ico">	<!--Icono de la página!-->
+	<link rel="stylesheet" href="css/fontello-42db868d/css/fontello.css">	<!--El uso de los iconos!-->
+
+	<script src="JavaScript/javascript.js"></script>	<!--JavaScript!-->	
+	<script src="JavaScript/animacion-sb.js"></script>	<!--Para la animación de subir y bajar!-->
+	<script src="JavaScript/carga-total.js"></script>	<!--Para el uso del contenedor carga, al inicio de la página!-->
+	<script src="JavaScript/particles.js"></script>     <!--Efecto de las partículas!-->
+	<script src="jquery/jquery-3.2.1.js"></script>	<!--Plugin para el formulario-->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <!--Bloquear ctrl+u-->
+
+	<script type="text/javascript">
+	    document.oncontextmenu = function(){
+        return false;
+    };
+	</script>
+
+    <script>
+        document.onkeydown = function(e) {
+                if (e.ctrlKey && 
+                    (e.keyCode === 67 || 
+                     e.keyCode === 86 || 
+                     e.keyCode === 85 || 
+                     e.keyCode === 117)) {
+                    return false;
+                } else {
+                    return true;
+                }
+        };
+        $(document).keypress("u",function(e) {
+          if(e.ctrlKey)
+          {
+        return false;
+        }
+        else
+        {
+        return true;
+        }
+        });
+    </script>
+    <script>
+        $(document).keydown(function (event) {
+        if (event.keyCode == 123) { // Prevent F12
+            return false;
+        } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
+            return false;
+        }
+        });
+    </script>
+
+	<script type="text/javascript">
+	var respuesta;
+		respuesta = confirm ("Le presentamos nuestros Terminos y Condiciones del sitio \nDesde que ingresas al sitio estas aceptando los Términos y Condiciones" \n "Versión BETA");
+	if(respuesta){
+		alert("Usted aceptó los terminos y condiciones de nuestro sitio\nThe Wolrd in my Lens\n|||||BIENVENIDO|||||.");
+	}
+		else{
+			alert("Usted no aceptó los terminos y condiciones de nuestro sitio\nThe World in my Lens\nLe redireccionará a Google");
+        	window.location = "http://www.google.com.mx";//Redirigir
+		}
+
+	</script>
+	
+	<script type="text/javascript">
+	    alert("La página esta presentando mejoras\nGracias Por su Visita!!");
+	</script>
+</head>
+
+<body class="index" ondragstart='return false'><!--Bloquear arrastrar y soltar-->	
+
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="/__/firebase/7.14.2/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     		https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="/__/firebase/7.14.2/firebase-analytics.js"></script>
+
+	<!-- Initialize Firebase -->
+	<script src="/__/firebase/init.js"></script>
+
+
+	<div id="contenedor_carga">	<!--Contenedor que aparece al inicio, mientras carga la página -->
+		<div id="carga"></div>
+	</div>
+	<a name="arriba"></a>	<!--Parte de arriba, se usa para el botón final!-->
+	
+	
+	<div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v5.0"></script>
+	
+	
+	
+<header>
+    
+	<img id="logo" src="img/logo/logo.png" alt="">	<!--Logo Principal, en el menú!-->
+        <div class="textos">	<!--!-->
+            <h1 id="titulo">The World in my Lens</h1>	<!--Título principal de la página!-->
+            <h6 id="slogan">	<!--Slogan, bajo el título principal!-->
+				"La cámara es un cuaderno de bocetos, un instrumento para la intuición y la espontaneidad”
+			</h6>
+			
+		
+			<!--<h6 id="slogan">	<!--Slogan, bajo el título principal!-->
+			<!--	"El fotógrafo es el ser contemporáneo por excelencia; a través de su mirada, el ahora se vuelve pasado”
+			</h6>-->
+			
+			<nav>
+			    
+				<div class="menu-principal" role="navigation">	<!--Bloque del menú principal, norma WAI-ARIA para personas con problmeas-->
+					<a href="#galeria" class="boton">Galería</a>	<!--Redirecciona a Galería!-->
+
+				<!--	<a href="#" class="boton">Álbum</a>	<!--Redirecciona a Galería!-->
+				<!--<a href="#reconocimientos" class="boton">Reconocimientos</a>	<!--Redirecciona a Servicios!-->	
+					<a href="#sobre-mi" class="boton">Sobre Mí</a>	<!--Redirecciona a Sobre Mi!-->
+					<!--<a href="Portafolio/portafolio.html" class="boton">Galería Beta</a>	<!--Redirecciona a Galería Beta!-->
+					<a href="extra/map.html" class="boton">Mapa COVID-19</a>
+				</div>
+
+				<div class="menu-social" role="navigation">	<!--Barra social, norma WAI-ARIA para personas con problmeas!-->
+					<a href="https://www.instagram.com/twl_afb"><label class="icon-instagram"></label></a>
+					<a href="https://www.facebook.com/The-World-in-my-Lens-851724535199862"><label class="icon-facebook-1"></label></a>
+					<a href="https://www.youtube.com/channel/UCxpw0yfNFK6DIHCPndYwebg"><label class="icon-youtube"></label></a>
+					<a href="mailto:twl.contacto@gmail.com?subject=Contact"><label class="icon-user"></label></a>
+				</div>
+			</nav>
+        </div>
+	    
+	    
+	    
+</header>
+    <div class="social-bar-lateral">
+            <a href="https://www.instagram.com/twl_afb" class="ico icon-instagram" target="_blank"></a>
+    	    <a href="https://www.facebook.com/The-World-in-my-Lens-851724535199862" class="ico icon-facebook-1" target="_blank"></a>
+            <a href="https://www.youtube.com/channel/UCxpw0yfNFK6DIHCPndYwebg" class="ico icon-youtube" target="_blank"></a>
+    	</div>
+	<a href="#arriba" class="ir-arriba icon-up-circle" id="#foward"></a>	<!--Botón para ir al inicio!-->
+	
+	<main role="main">	<!--Contenido principal de la página, norma WAI-ARIA para personas con problmeas!-->
+		<section class="bienvenida">	<!--!-->
+				<a name="video-bienvenida"></a>	<!--Parte de arriba, se usa para el botón final!-->
+
+			<div class="contenedor">
+				<h2 class="titulo-bienvenida">Bienvenido</h2>
+				<video class="video-bienv" src="http://drive.google.com/uc?export=view&id=1HWNiLQcUmqhQq8zz9UmdNFEJgvGT-JNa" autoplay loop muted nodownload></video>	<!--clip/bienvenida/vid bienvenida.mp4-->
+			</div>
+			
+		</section>
+		
+    <section class="tecnologia">	<!--!-->
+		 <a name="tecnologia"></a>	<!--Parte de arriba, se usa para el botón final!-->
+            <div class="contenedor">
+                <h2 class="titulo-tecnologia">Forma de Trabajo y Tecnología</h2>
+                <h3 class="subtitulo-tecnologia">Conoce un poco de mi forma de trabajar</h3>
+                
+				<div class="cards">
+                    <div class="card">
+                        <img src="http://drive.google.com/uc?export=view&id=18WLUXpXc3o57jmPE8IeESTp6MddrAIC9" alt="">	<!--Nota: el atributo alt es necesario para el elemento <img>. !-->
+                        <h4>SAMSUNG</h4>
+						<p>Cámaras <b>"El triple de diversión"</b></p>
+                    </div>
+					
+                    <div class="card">
+                        <img src="http://drive.google.com/uc?export=view&id=1tXN2Emg1rBBB6tcmx9GE_8LBh0BRmNe1" alt="">
+                        <h4>Colores vivos</h4>
+						<p>Capturas con <b>HDR</b></p>
+                    </div>
+					
+                    <div class="card">
+                        <img src="http://drive.google.com/uc?export=view&id=1LdwZ_PyqD9OMLmtmFMiRJMXhme2KOXLo" alt="">
+                        <h4>Tomas Perfectas</h4>
+                        <p>Escencia de momentos únicos en una captura</p>
+                    </div>
+					
+					<div class="card">
+                        <img src="http://drive.google.com/uc?export=view&id=19YN64FtLRODMjM7yh8p_OY3hzUiLb8J-" alt="">
+                        <h4>Cámara Slow Motion</h4>
+                        <p>Capturando hasta 720 fps en <b> HD </b></p>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="http://drive.google.com/uc?export=view&id=1g7hgwR3o63kbzSZizay0OdNd89QoF2yT" alt="">
+                        <h4>Vídeos</h4>
+                        <p>Recuerdos en un Clip</p>
+						<p>No pierdas ningún detalle, <b>4K 30 fps</b> - <b>FULL HD 60 fps</b></p>
+                    </div>
+					
+                </div>
+            </div>
+    </section>		
+		
+		
+	  <section class="intro-galeria">
+		  <a name="galeria"></a>	<!--Parte de arriba, se usa para el botón final!-->
+		  <div class="contenedor">
+			  <h2 class="titulo-tecnologia">Galería</h2>
+			  <h3 class="subtitulo-galeria">Géneros Fotográficos</h3>
+			  
+			  <div class="galeria">
+				  <div class="imagenes none">   <!--Monumentos-->
+					  <a href="galería/index-galeria/index-album/subpaginas/1/index.html" target="_blank"><img src="http://drive.google.com/uc?export=view&id=1oYgcS9CKUeI-2PgtoKllwZN7-B3OTJS5" alt=""><!--img/intro-galeria/1.jpg-->
+					  <div class="encima-letra">
+						  <h2>Monumentos, Edificios y Estructuras<br><i>AFB</i></h2>
+					  </div></a>
+				  </div>
+				  <div class="imagenes">    <!--Arte-->
+					  <a href="galería/index-galeria/index-album/subpaginas/2/index.html" target="_blank"><img src="http://drive.google.com/uc?export=view&id=1igzRR0zEqDLymfdgrSKSRUjneS2YgKej" alt="">
+					  <div class="encima-letra">
+						  <h2>ARTE<br><i>AFB</i></h2>
+					  </div></a>
+				  </div>
+				  <div class="imagenes">    <!--Collage--> 
+					  <a href="galería/index-galeria/galeria.html"><video class="imagenes" src="http://drive.google.com/uc?export=view&id=1iiqEsfnMGIIZ6omJF3lJxH_sePbqdZ6p" autoplay loop muted></video>
+					 <div class="encima"><!--img/intro-galeria/3.mp4-->
+						  <h2>TWL<br>Demo Galería<br><br><i>AFB</i></h2>
+					  </div></a>
+
+				  </div>
+				  <div class="imagenes">    <!--Momentos Especiales-->
+					  <a href="galería/index-galeria/index-album/subpaginas/4/index.html" target="_blank"><img src="http://drive.google.com/uc?export=view&id=1VeLvqrfVLPJebRrogkhllUe-Acvu3p6D" alt="">
+					  <div class="encima-letra">
+						  <h2>Momentos<br><br><i>AFB</i></h2>
+					  </div></a>
+				  </div>
+				  <div class="imagenes none">   <!--Naturaleza-->
+					  <a href="galería/index-galeria/index-album/subpaginas/5/index.html" target="_blank"><img src="http://drive.google.com/uc?export=view&id=1XnuXQEEI6kpbMNPn3xsCfsxvSY42MvrL" alt="">
+					  <div class="encima-letra">
+						  <h2>Naturaleza<br><i>AFB</i></h2>
+					  </div></a>
+				  </div>
+				  
+			  </div>
+
+			  <div class="galeria">
+				  <div class="imagenes none">   <!--Costumbres y Tradiciones-->
+					  <a href="galería/index-galeria/index-album/subpaginas/6/index.html" target="_blank"><img src="http://drive.google.com/uc?export=view&id=1u_o5Lz92zi5PQuYqMPUf3tpO17lCRI68" alt="">
+					  <div class="encima-letra">
+						  <h2>Costumbres y Tradiciones<br><i>AFB</i></h2>
+					  </div></a>
+				  </div>
+				  <div class="imagenes">    <!--Tiempo-->
+					  <a href="galería/index-galeria/index-album/subpaginas/7/index.html" target="_blank"><img src="http://drive.google.com/uc?export=view&id=1W-6lSmekXhQ-d9_oXEJY1k2gMT8AbTRD" alt="">
+					  <div class="encima-letra">
+						  <h2>ARTE<br><i>AFB</i></h2>
+					  </div></a>
+				  </div>
+				  <div class="imagenes">    <!--YouTube-->
+					  <a href="galería/index-galeria/index-album/subpaginas/8/album8.html"><img src="http://drive.google.com/uc?export=view&id=1BSeKXfUcpRzXQBtyPIsek15ynAgIHDlp" alt="">
+					  <div class="encima-letra">
+						  <h2>TWL<br>YouTube<br><br><i>AFB</i></h2>
+					  </div></a>
+
+				  </div>
+				  
+				  <div class="imagenes">    <!-- -->
+					  <!--a href="galería/index-galeria/index-album/subpaginas/10/album10.html" target="_blank">--><img src="https://image.freepik.com/vector-gratis/proximamente-mensaje-iluminado-proyector-luz_1284-3622.jpg" alt="">
+					  <div class="encima-letra">
+						  <h2>PRÓXIMAMENTE<br><i>AFB</i></h2>
+					  </div><!--</a> -->
+				  </div>
+				  
+				  <div class="imagenes none">   <!--BETA-->
+					  <a href="galería/index-galeria/index-album/subpaginas/9/album9.html" target="_blank"><img src="https://image.freepik.com/vector-gratis/proximamente-mensaje-iluminado-proyector-luz_1284-3622.jpg" alt="">
+					  <div class="encima-letra">
+						  <h2>BETA<br><i>AFB</i></h2>
+					  </div></a>
+				  </div>
+				  
+			  </div>
+		  </div>
+		</section>	  
+	  
+	  <section class="tecnologia">
+	       <a name="galeria"></a>	<!--Parte de arriba, se usa para el botón final!-->
+		  <div class="contenedor">
+			  <h2 class="titulo-tecnologia">Social</h2>
+			  <h3 class="subtitulo-galeria">Sígueme en mis redes sociales!!</h3>
+			  
+                <div class="contenedor-facebook">    			  
+    			  <div class="fb-page" data-href="https://www.facebook.com/TWLPue" data-tabs="timeline" data-width="500" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/TWLPue" class="fb-xfbml-parse-ignore" ><a href="https://www.facebook.com/TWLPue">The World in my Lens</a></blockquote>
+    			  </div>
+                </div>
+		   </div>	  
+	  </section>
+	  
+		<section class="contacto">
+			
+			<form action="" class="form_contacto">
+				<h2>Contáctame</h2>
+				<div class="user_info">
+					<label for="names">Nombre(s)</label>
+					<input type="text" id="names">
+					
+					<label for="phone">Número de Teléfono</label>
+					<input type="text" id="phone">
+					
+					<label for="email">Correo electrónico *</label>
+					<input type="text" id="email">
+					
+					<label for="mensaje">Mensaje(s)</label>
+					<textarea id="mensaje"></textarea>
+					
+					<input type="button" value="Enviar" id="btnSend">
+				</div>
+			</form>
+			<section class="breve-informacion-contact">
+				<section class="info_title">
+					<h2>CONTACTO PERSONAL</h2>
+					<span class="icon-user"></span>
+				</section>
+				<section class="info_items">
+					<p><img src="Footer/ico/email-icon.png" alt="user">&ensp;&ensp; twl.contacto@gmail.com</p>
+					<br>
+					<p><img src="Footer/ico/Mobile-Smartphone-icon.png" alt="numero-telefono">&ensp;&ensp; NA</p>
+				</section>
+			</section>
+		</section>
+		
+		
+</main>
+	
+ <footer role="contentinfo">	<!--norma WAI-ARIA para personas con problmeas-->
+	 <a name="sobre-mi"></a>	<!--Parte de arriba, se usa para el botón final!-->
+
+ 	<div class="contenedor-footer-total">
+        
+		<div class="contenedor-cuerpo">
+
+			<div class="columna1">
+				<h1>Más Sobre Mí</h1>
+				<p>Soy alumno de la Facultad de Ciencias de la Computación de la BUAP. Hice esta página Web como Hobbie personal, con algunas de mis mejores capturas.</p>
+			</div>
+
+			<div class="columna2">
+				<h1>Redes Sociales</h1>	
+				
+					<div class="row">
+						<a href="https://www.instagram.com/twl_afb"><img src="Footer/ico/Instagram-icon.png" alt=""></a>
+						<label>Sígueme en Instagram</label>
+					</div>
+	
+					<div class="row">
+						<a href="https://www.facebook.com/The-World-in-my-Lens-851724535199862"><img src="Footer/ico/Facebook-icon.png" alt=""></a>
+						<label>Sígueme en Facebook</label>
+					</div>
+	
+					
+					<div class="row">
+						<a href="https://www.youtube.com/channel/UCxpw0yfNFK6DIHCPndYwebg"><img src="Footer/ico/Youtube-icon.png" alt=""></a>
+						<label>Sígueme en Youtube</label>
+					</div>
+
+			</div>
+
+			<div class="columna3">
+				
+				<h1>Contacto Trabajo</h1>
+
+					<div class="row2">
+                       <img src="Footer/ico/home-icon.png" alt="">
+                       <label>San Pedro Cholula, Pue. México.</label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="Footer/ico/email-icon.png" alt="">
+						<label><a href="mailto:twl.contacto@gmail.com?subject=Contact">twl.contacto@gmail.com</a></label>
+                    </div>	
+				
+                    <div class="row2">
+                        <img src="Footer/ico/Mobile-Smartphone-icon.png" alt="">
+                        <label> NA</label>
+                    </div>
+			</div>
+		</div>
+	 </div>
+        
+        
+	 <div class="contenedor-footer">
+		 <div class="pie">
+			 <div class="d-r">
+				 <p class="copyright">&copy; 2020 | <a href="">TWL</a> | Todos los derechos reservados D.R. &reg;</p>
+				 <p class="footer-links"><a href="https://1drv.ms/t/s!AtZUB2N4hUE-gdJpOB0rw5zH2Erz-g">Términos y Condiciones</a> &ensp;| &ensp; <a href="http://buap.mx">Mi Universidad</a> &ensp;| &ensp; <a href="https://www.w3.org/WAI/standards-guidelines/aria/">Accesibilidad</a></p>
+			 </div>				
+		 </div>
+	 </div>
+	<a name="abajo"></a><!-- atajo para ir al final de la página!-->
+</footer>
+</body>
+
+</html>

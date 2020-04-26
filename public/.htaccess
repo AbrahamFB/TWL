@@ -1,0 +1,12 @@
+
+# HTID:12221294: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www.)?(twl.000webhostapp.com)(/)?.*$      [NC]
+RewriteRule .*.(.*)$ https://https://www.google.com.mx/ [R,NC]
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:12221294:
+
+# HTID:12221327: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www.)?(twl.000webhostapp.com)(/)?.*$      [NC]
+RewriteRule .*.(.jpg|.jpeg|.gif|.png|.bmp|.tiff)$ https://www.google.com.mx [R,NC]
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:12221327:

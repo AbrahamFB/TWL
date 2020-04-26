@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>The World in my lens - Momentos que dejan huella</title>
+		<link rel="icon" href="../../../../../img/logo/logo.ico">	<!--Icono de la página!-->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+    document.onkeydown = function(e) {
+            if (e.ctrlKey && 
+                (e.keyCode === 67 || 
+                 e.keyCode === 86 || 
+                 e.keyCode === 85 || 
+                 e.keyCode === 117)) {
+                return false;
+            } else {
+                return true;
+            }
+    };
+    $(document).keypress("u",function(e) {
+      if(e.ctrlKey)
+      {
+    return false;
+    }
+    else
+    {
+    return true;
+    }
+    });
+    </script>
+
+	<script type="text/javascript">
+	    document.oncontextmenu = function(){
+        return false;
+    };
+	</script>
+	
+	<script src="../../../../../JavaScript/javascript.js"></script>	<!--JavaScript!-->
+	<script src="../../JavaScript/javascript - album.js"></script>	<!--JavaScript Único!-->	
+	<script src="../../../../../JavaScript/animacion-sb.js"></script>	<!--Para la animación de subir y bajar!-->
+	<script src="../../../../../JavaScript/carga-total.js"></script>	<!--Para el uso del contenedor carga, al inicio de la página!-->
+	
+	<script src="../../JavaScript/popper.min.js"></script>
+	<!--<script src="../../index-album/subpaginas/js/particles.js"></script>!-->
+	<script src="../../jquery/jquery-3.2.1.min.js"></script>
+	<script src="../../jquery/jquery.bsPhotoGallery-min.js"></script>	
+	<script src="../../Bootstrap/bootstrap.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+        $('ul.first').bsPhotoGallery({
+			"classes" : "col-xl-3 col-lg-2 col-md-4 col-sm-4",
+          	"hasModal" : true,
+          	"shortText" : false  
+        	});
+      	});
+    </script>  
+    <script>
+        $(document).keydown(function (event) {
+        if (event.keyCode == 123) { // Prevent F12
+            return false;
+        } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
+            return false;
+        }
+        });
+    </script>
+	</head>
+	<body class="is-loading-0 is-loading-1 is-loading-2">
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>The World in my Lens</h1>
+						<h2>Momentos que dejan huella</h2>
+						<p>Mis mejores capturas de algunas de los edificios, monumentos y estructuras de Puebla.</p>
+						<ul class="icons">
+							<li><a href="https://www.instagram.com/twl_afb/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="twl.contacto@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+					</header>
+
+				<!-- Miniaturas -->
+					<section id="thumbnails">
+						<article>
+							<a class="thumbnail" href="http://drive.google.com/uc?export=view&id=1GFMNtvZSJvOT5lurMpFOA7emz6la0BFW" data-position="left center"><img src="http://drive.google.com/uc?export=view&id=1GFMNtvZSJvOT5lurMpFOA7emz6la0BFW" alt="" /></a>
+							<h2>Barquitos de Papel</h2>
+							<p>"Para desembarcar en la isla de la sabiduría hay que navegar en un océano de aflicciones."
+								<h6>Sócrates</h6>
+							</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="http://drive.google.com/uc?export=view&id=1630YRRANPaeQ7vhcCELbxhhwiUkB2jmK"><img src="http://drive.google.com/uc?export=view&id=1630YRRANPaeQ7vhcCELbxhhwiUkB2jmK" alt="" /></a>
+							<h2></h2>
+							<p>"Si no te gusta algo, cámbialo. Si no lo puedes cambiar, entonces cambia tu actitud".</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="http://drive.google.com/uc?export=view&id=1at1ej0u3eCoI5e51c0-jTZlXPTbKwcyx" data-position="top center"><img src="http://drive.google.com/uc?export=view&id=1at1ej0u3eCoI5e51c0-jTZlXPTbKwcyx" alt="" /></a>
+							<h2>Cholula</h2>
+							<p></p>
+						</article>
+						
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; 2020 | <a href="../../../../../index.html">TWL</a> | Todos los derechos reservados D.R. &reg;</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
