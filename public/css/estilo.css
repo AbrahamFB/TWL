@@ -784,7 +784,6 @@ footer{
     width: 100%;
     background: rgba(32,32,32,1.00);
     color: rgba(255,255,255,1.00);   
-    
 }
 
 footer p{
@@ -953,7 +952,7 @@ footer p{
     header{
 		height: 1300px;	/*Altura*/
 		width: 100%;	/*Largo*/
-		background-image: url("https://pixabay.com/get/52e6dc414c53ac14ea9d8579c12c3477113ac3e45656774c74297bd290/christmas-4692610.jpg");
+		/*background-image: url("https://pixabay.com/get/52e6dc414c53ac14ea9d8579c12c3477113ac3e45656774c74297bd290/christmas-4692610.jpg");*/
 	}
 	
 	header #titulo{
