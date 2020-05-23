@@ -56,13 +56,10 @@ body{
 /*Encabezado*/
 
 header{
-    z-index: 100000;	/*Para posicionar sobre todos los elementos de la página*/
+    z-index: 10000000000;	/*Para posicionar sobre todos los elementos de la página 10 = 10*/
     height: 100vh;	/*Altura*/
     width: 100%;	/*Largo*/
-    /*background-image: url("../img/fondo-head/orig_7871.gif");*/
-    /*background-image: url("https://correobuap-my.sharepoint.com/personal/abraham_floresb_alumno_buap_mx/Documents/TWL/img/fondo-head/snowman-2082688.jpg");
-    background-image: url("../img/fondo-head/HD/2020/Abril/sunflower-3566523.jpg");*/
-    background-image: url("http://drive.google.com/uc?export=view&id=13OBWzph2AmmK1njCVoYOv0ISVNEZNiWl");
+    background-image: url("http://drive.google.com/uc?export=view&id=1q7KP_NmODnsj5770SvGm_mGKNUaZpYhX");
     background-attachment: fixed;	/*Permanezca fija*/
     background-position: center;	/*Posicionar la imagen en el centro*/
     background-size: cover;	/*1especificar el tamaño de las imágenes de fondo, 2escalar la imagen al mayor tamaño posible sin estirarla*/
@@ -93,7 +90,7 @@ header #logo{
 	width: 120px;	/*Largo*/	
 	height: 120px;	/*Altura*/	
 	/*margin-top: 115px; /*Anchura del margen superior*/
-	margin-top: 280px; /*Anchura del margen superior*/
+	margin-top: 15%; /*Anchura del margen superior*/
 }
 
 header .boton{
@@ -101,6 +98,7 @@ header .boton{
     display: inline-block;	/*Elementos en linea*/
     padding: 10px;	/*Establecer el espacio de relleno por todos los lados de los botones del menú*/
     width: 150px;	/*Largo*/
+    background: rgba(0,0,0,0.1);	/*Color que aparece cuando se pasa el mouse*/
     border: 2px solid rgba(255,255,255,0.35);	/*Borde de los botones del menú (grosor, selector de color, color)*/
     color: rgba(255,255,255,1.00);	/*Color de la letra de los botones del menú*/
     font-size: 16px;	/*Tamaño de letra de los botones del menú*/
@@ -122,16 +120,17 @@ header .menu-social{
 }
 
 header .menu-social a{	/*Selecciona todo lo que esta dentro de /a/*/
+    border-radius: 30px;	/*Borde*/
 	color: white;	/*Color de los iconos sociales*/
 	list-style: none;	/*Estilo lista no*/
-	padding: 20px; /*Espacio entre elementos*/
+    padding: 20px; /*Espacio entre elementos*/
+    
 }
 
 header .menu-social a:hover{	/*Solo selecciona a  /a/*/
-	color: rgba(255,255,255,1.00);	/*Relleno*/
 	border-left-style: ridge;	/*Efecto borde izquierdo*/
 	font-size: 25px;	/*Agrande cuando se selecciona*/
-	background: rgba(0,0,0,0.66); /*Cambia de color*/
+	background: rgba(0,0,0,0.50); /*Cambia de color*/
 	cursor: pointer;	/*Especifica el tipo de cursor que se mostrará cuando este se encuentre sobre /a/ el tipo es una mano*/
 	transition: all 300ms;	/*Efecto de movimiento*/
 }
@@ -156,7 +155,7 @@ header .menu-social a:hover{	/*Solo selecciona a  /a/*/
 	transition: all .5s;
 }
 
-.social-bar-lateral .icon-facebook-1{
+/*.social-bar-lateral .icon-facebook-1{
 	background: #2E406E;
 }
 
@@ -180,7 +179,7 @@ header .menu-social a:hover{	/*Solo selecciona a  /a/*/
 	padding-right: 2rem;
 	border-radius: 0 1rem 1rem 0;
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.42);
-}
+}*/
 
 
 /*Uso universal en toda la página*/
@@ -311,14 +310,17 @@ h3.subtitulo-tecnologia, h3.subtitulo-galeria, h3.subtitulo-reconocimientos, h3.
 
 
 .galeria{
-     box-shadow: 40px -20px 50px 0 rgba(52, 73, 94, 0.849);	/*<offset-x> <offset-y> <blur-radius> <spread-radius> <color de sombra>?*/
+    box-shadow: 40px -20px 50px 0 rgba(52, 73, 94, 0.849);	/*<offset-x> <offset-y> <blur-radius> <spread-radius> <color de sombra>?*/
     width: 100%;
     height: 500px;
     overflow: hidden;
-    display: flex;
     position: relative;
     flex-wrap: wrap;
+    display: flex;	/*Alterar el ancho y alto de sus elementos para ajustarse lo mejor posible al espacio disponible en cualquier dispositivo*/
+    flex-wrap: wrap;	/*Especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas (Los elementos flex son colocados en varias líneas.)*/
+    justify-content: space-around;	/*Los items flex se distribuyen uniformemente sobre la línea.*/
 }
+
 
 .imagenes{
 	z-index: 100;	/*Para posicionar sobre todos los elementos de la página*/
@@ -329,10 +331,9 @@ h3.subtitulo-tecnologia, h3.subtitulo-galeria, h3.subtitulo-reconocimientos, h3.
 }
 
 .imagenes img{
-	
+    object-fit: cover;	/*Especifica como el contenido de un elemento remplazado debería adaptarse según el alto y ancho de su contenedor (tamaño de cards se resuelve como una restricción de cobertura contra el ancho y la altura utilizados del elemento.)*/
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .imagenes video{
