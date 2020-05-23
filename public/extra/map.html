@@ -3,68 +3,70 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
-	<link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <link rel="stylesheet" href="estilo.css">
 
-	<link rel="icon" href="../../../../../img/logo/logo.ico">	<!--Icono de la página!-->
+    <link rel="icon" href="../../../../../img/logo/logo.ico">
+    <!--Icono de la página!-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
-	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
-	<script src="main.js"></script>
+    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
     <script>
-    document.onkeydown = function(e) {
-            if (e.ctrlKey && 
-                (e.keyCode === 67 || 
-                 e.keyCode === 86 || 
-                 e.keyCode === 85 || 
-                 e.keyCode === 117)) {
+        document.onkeydown = function (e) {
+            if (e.ctrlKey &&
+                (e.keyCode === 67 ||
+                    e.keyCode === 86 ||
+                    e.keyCode === 85 ||
+                    e.keyCode === 117)) {
                 return false;
             } else {
                 return true;
             }
-    };
-    $(document).keypress("u",function(e) {
-      if(e.ctrlKey)
-      {
-    return false;
-    }
-    else
-    {
-    return true;
-    }
-    });
+        };
+        $(document).keypress("u", function (e) {
+            if (e.ctrlKey) {
+                return false;
+            }
+            else {
+                return true;
+            }
+        });
     </script>
 
-	<script type="text/javascript">
-	    document.oncontextmenu = function(){
-        return false;
-    };
-	</script>
-	
-	<script src="../../../../../JavaScript/javascript.js"></script>	<!--JavaScript!-->
-	<script src="../../../../../JavaScript/animacion-sb.js"></script>	<!--Para la animación de subir y bajar!-->
-	<script src="../../../../../JavaScript/carga-total.js"></script>	<!--Para el uso del contenedor carga, al inicio de la página!-->
-	
-	<!--<script src="../../index-album/subpaginas/js/particles.js"></script>!-->
-	<script src="../../jquery/jquery.bsPhotoGallery-min.js"></script>	
-	<script src="../../Bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        document.oncontextmenu = function () {
+            return false;
+        };
+    </script>
 
-	<script>
-		$(document).ready(function(){
-        $('ul.first').bsPhotoGallery({
-			"classes" : "col-xl-3 col-lg-2 col-md-4 col-sm-4",
-          	"hasModal" : true,
-          	"shortText" : false  
-        	});
-      	});
-    </script>  
+    <script src="../../../../../JavaScript/javascript.js"></script>
+    <!--JavaScript!-->
+    <script src="../../../../../JavaScript/animacion-sb.js"></script>
+    <!--Para la animación de subir y bajar!-->
+    <script src="../../../../../JavaScript/carga-total.js"></script>
+    <!--Para el uso del contenedor carga, al inicio de la página!-->
+
+    <!--<script src="../../index-album/subpaginas/js/particles.js"></script>!-->
+    <script src="../../jquery/jquery.bsPhotoGallery-min.js"></script>
+    <script src="../../Bootstrap/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('ul.first').bsPhotoGallery({
+                "classes": "col-xl-3 col-lg-2 col-md-4 col-sm-4",
+                "hasModal": true,
+                "shortText": false
+            });
+        });
+    </script>
     <script>
         $(document).keydown(function (event) {
-        if (event.keyCode == 123) { // Prevent F12
-            return false;
-        } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
-            return false;
-        }
+            if (event.keyCode == 123) { // Prevent F12
+                return false;
+            } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
+                return false;
+            }
         });
     </script>
     <script src="https://www.googletagmanager.com/gtm.js?id=GTM-5LCDPVG"></script>
@@ -114,7 +116,8 @@
     <link href="/static/css/main.29a8983e.chunk.css" rel="stylesheet">
 </head>
 
-<body ondragstart='return false'><!--Bloquear arrastrar y soltar-->
+<body ondragstart='return false'>
+    <!--Bloquear arrastrar y soltar-->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LCDPVG" height="0" width="0"
             style="display:none;visibility:hidden"></iframe>
@@ -125,98 +128,101 @@
                 <div class="Header_container__2zLfi">
                     <a class="Header_banner__1wOrS" href="/">
                         <img class="Header_brand__3Z0qx"
-                            src="https://www.mecknc.gov/news/PublishingImages/covid-hdr.jpg"
-                    </a>
+                            src="https://www.mecknc.gov/news/PublishingImages/covid-hdr.jpg" </a>
                 </div>
             </header>
             <div class="Application_pageContent__3PrU9">
                 <div class="MapView_base__2waUb">
                     <div class="MapView_container__3Z8Wv">
                         <div class="MapView_embedContainer__2vD68"><iframe
-                                title="Coronavirus COVID-19 Global Cases by Johns Hopkins CSSE" width="1300" height="900"
-                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                title="Coronavirus COVID-19 Global Cases by Johns Hopkins CSSE" width="1300"
+                                height="900" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                                 src="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"></iframe>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
-           	 <footer role="contentinfo">	<!--norma WAI-ARIA para personas con problmeas-->
-	 <a name="sobre-mi"></a>	<!--Parte de arriba, se usa para el botón final!-->
+            <footer role="contentinfo">
+                <!--norma WAI-ARIA para personas con problmeas-->
+                <a name="sobre-mi"></a>
+                <!--Parte de arriba, se usa para el botón final!-->
 
- 	<div class="contenedor-footer-total">
-        
-		<div class="contenedor-cuerpo">
+                <div class="contenedor-footer-total">
 
-			<div class="columna1">
-				<h1>Más Sobre Mí</h1>
-				<p>Soy alumno de la Facultad de Ciencias de la Computación de la BUAP. Hice esta página Web como Hobbie personal, con algunas de mis mejores capturas.</p>
-			</div>
+                    <div class="contenedor-cuerpo">
 
-			<div class="columna2">
-				<h1>Redes Sociales</h1>	
-				
-					<div class="row">
-						<a href="https://www.instagram.com/twl_afb"><img src="Footer/ico/Instagram-icon.png" alt=""></a>
-						<label>Sígueme en Instagram</label>
-					</div>
-	
-					<div class="row">
-						<a href="https://www.facebook.com/The-World-in-my-Lens-851724535199862"><img src="Footer/ico/Facebook-icon.png" alt=""></a>
-						<label>Sígueme en Facebook</label>
-					</div>
-	
-					<div class="row">
-						<a href="www.plus.google.com/tworldlens"><img src="Footer/ico/Google-icon.png" alt=""></a>
-                        <label>Sígueme en Google+</label>
-                   </div>
-					
-					<div class="row">
-						<a href="https://www.youtube.com/channel/UCxpw0yfNFK6DIHCPndYwebg"><img src="Footer/ico/Youtube-icon.png" alt=""></a>
-						<label>Sígueme en Youtube</label>
-					</div>
+                        <div class="columna1">
+                            <h1>Más Sobre Mí</h1>
+                            <p>Soy alumno de la Facultad de Ciencias de la Computación de la BUAP. Hice esta página Web
+                                como Hobbie personal, con algunas de mis mejores capturas.</p>
+                        </div>
 
-			</div>
+                        <div class="columna2">
+                            <h1>Redes Sociales</h1>
 
-			<div class="columna3">
-				
-				<h1>Contacto Trabajo</h1>
+                            <div class="row">
+                                <a href="https://bit.ly/2Zu4SE7"><img src="Footer/ico/Instagram-icon.png" alt=""></a>
+                                <label>Sígueme en Instagram</label>
+                            </div>
 
-					<div class="row2">
-                       <img src="Footer/ico/home-icon.png" alt="">
-                       <label>San Pedro Cholula, Pue. México.</label>
+                            <div class="row">
+                                <a href="https://bit.ly/3ebS6hv"><img src="Footer/ico/Facebook-icon.png" alt=""></a>
+                                <label>Sígueme en Facebook</label>
+                            </div>
+
+                            <div class="row">
+                                <a href="https://bit.ly/3cVtfyr"><img src="Footer/ico/Youtube-icon.png" alt=""></a>
+                                <label>Sígueme en Youtube</label>
+                            </div>
+
+                        </div>
+
+                        <div class="columna3">
+
+                            <h1>Contacto Trabajo</h1>
+
+                            <div class="row2">
+                                <img src="Footer/ico/home-icon.png" alt="">
+                                <label>San Pedro Cholula, Pue. México.</label>
+                            </div>
+
+                            <div class="row2">
+                                <img src="Footer/ico/email-icon.png" alt="">
+                                <label><a
+                                        href="mailto:twl.contacto@gmail.com?subject=Contact">twl.contacto@gmail.com</a></label>
+                            </div>
+
+                            <div class="row2">
+                                <img src="Footer/ico/Mobile-Smartphone-icon.png" alt="">
+                                <label> NA</label>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="row2">
-                        <img src="Footer/ico/email-icon.png" alt="">
-						<label><a href="mailto:twl.contacto@gmail.com?subject=Contact">twl.contacto@gmail.com</a></label>
-                    </div>	
-				
-                    <div class="row2">
-                        <img src="Footer/ico/Mobile-Smartphone-icon.png" alt="">
-                        <label> NA</label>
+
+                <div class="contenedor-footer">
+                    <div class="pie">
+                        <div class="d-r">
+                            <p class="copyright">&copy;
+                                <script>document.write(new Date().getFullYear());</script> | <a href="">TWL</a> | Todos
+                                los derechos reservados D.R. &reg;</p>
+                            <p class="footer-links"><a
+                                    href="https://1drv.ms/t/s!AtZUB2N4hUE-gdJpOB0rw5zH2Erz-g">Términos y Condiciones</a>
+                                &ensp;| &ensp; <a href="http://buap.mx">Mi Universidad</a> &ensp;| &ensp; <a
+                                    href="https://www.w3.org/WAI/standards-guidelines/aria/">Accesibilidad</a></p>
+                        </div>
                     </div>
-			</div>
-		</div>
-	 </div>
-        
-        
-	 <div class="contenedor-footer">
-		 <div class="pie">
-			 <div class="d-r">
-				 <p class="copyright">&copy; 2020 | <a href="">TWL</a> | Todos los derechos reservados D.R. &reg;</p>
-				 <p class="footer-links"><a href="https://1drv.ms/t/s!AtZUB2N4hUE-gdJpOB0rw5zH2Erz-g">Términos y Condiciones</a> &ensp;| &ensp; <a href="http://buap.mx">Mi Universidad</a> &ensp;| &ensp; <a href="https://www.w3.org/WAI/standards-guidelines/aria/">Accesibilidad</a></p>
-			 </div>				
-		 </div>
-	 </div>
-	<a name="abajo"></a><!-- atajo para ir al final de la página!-->
-</footer>
+                </div>
+                <a name="abajo"></a><!-- atajo para ir al final de la página!-->
+            </footer>
 </body>
-        </div>
-    </div>
-    <script>!function (e) { function r(r) { for (var n, i, l = r[0], f = r[1], a = r[2], p = 0, s = []; p < l.length; p++)i = l[p], Object.prototype.hasOwnProperty.call(o, i) && o[i] && s.push(o[i][0]), o[i] = 0; for (n in f) Object.prototype.hasOwnProperty.call(f, n) && (e[n] = f[n]); for (c && c(r); s.length;)s.shift()(); return u.push.apply(u, a || []), t() } function t() { for (var e, r = 0; r < u.length; r++) { for (var t = u[r], n = !0, l = 1; l < t.length; l++) { var f = t[l]; 0 !== o[f] && (n = !1) } n && (u.splice(r--, 1), e = i(i.s = t[0])) } return e } var n = {}, o = { 1: 0 }, u = []; function i(r) { if (n[r]) return n[r].exports; var t = n[r] = { i: r, l: !1, exports: {} }; return e[r].call(t.exports, t, t.exports, i), t.l = !0, t.exports } i.m = e, i.c = n, i.d = function (e, r, t) { i.o(e, r) || Object.defineProperty(e, r, { enumerable: !0, get: t }) }, i.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, i.t = function (e, r) { if (1 & r && (e = i(e)), 8 & r) return e; if (4 & r && "object" == typeof e && e && e.__esModule) return e; var t = Object.create(null); if (i.r(t), Object.defineProperty(t, "default", { enumerable: !0, value: e }), 2 & r && "string" != typeof e) for (var n in e) i.d(t, n, function (r) { return e[r] }.bind(null, n)); return t }, i.n = function (e) { var r = e && e.__esModule ? function () { return e.default } : function () { return e }; return i.d(r, "a", r), r }, i.o = function (e, r) { return Object.prototype.hasOwnProperty.call(e, r) }, i.p = "/"; var l = this["webpackJsonpjhu-covid-19"] = this["webpackJsonpjhu-covid-19"] || [], f = l.push.bind(l); l.push = r, l = l.slice(); for (var a = 0; a < l.length; a++)r(l[a]); var c = f; t() }([])</script>
-    <script src="/static/js/2.34bea655.chunk.js"></script>
-    <script src="/static/js/main.a67510ec.chunk.js"></script>
+</div>
+</div>
+<script>!function (e) { function r(r) { for (var n, i, l = r[0], f = r[1], a = r[2], p = 0, s = []; p < l.length; p++)i = l[p], Object.prototype.hasOwnProperty.call(o, i) && o[i] && s.push(o[i][0]), o[i] = 0; for (n in f) Object.prototype.hasOwnProperty.call(f, n) && (e[n] = f[n]); for (c && c(r); s.length;)s.shift()(); return u.push.apply(u, a || []), t() } function t() { for (var e, r = 0; r < u.length; r++) { for (var t = u[r], n = !0, l = 1; l < t.length; l++) { var f = t[l]; 0 !== o[f] && (n = !1) } n && (u.splice(r--, 1), e = i(i.s = t[0])) } return e } var n = {}, o = { 1: 0 }, u = []; function i(r) { if (n[r]) return n[r].exports; var t = n[r] = { i: r, l: !1, exports: {} }; return e[r].call(t.exports, t, t.exports, i), t.l = !0, t.exports } i.m = e, i.c = n, i.d = function (e, r, t) { i.o(e, r) || Object.defineProperty(e, r, { enumerable: !0, get: t }) }, i.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, i.t = function (e, r) { if (1 & r && (e = i(e)), 8 & r) return e; if (4 & r && "object" == typeof e && e && e.__esModule) return e; var t = Object.create(null); if (i.r(t), Object.defineProperty(t, "default", { enumerable: !0, value: e }), 2 & r && "string" != typeof e) for (var n in e) i.d(t, n, function (r) { return e[r] }.bind(null, n)); return t }, i.n = function (e) { var r = e && e.__esModule ? function () { return e.default } : function () { return e }; return i.d(r, "a", r), r }, i.o = function (e, r) { return Object.prototype.hasOwnProperty.call(e, r) }, i.p = "/"; var l = this["webpackJsonpjhu-covid-19"] = this["webpackJsonpjhu-covid-19"] || [], f = l.push.bind(l); l.push = r, l = l.slice(); for (var a = 0; a < l.length; a++)r(l[a]); var c = f; t() }([])</script>
+<script src="/static/js/2.34bea655.chunk.js"></script>
+<script src="/static/js/main.a67510ec.chunk.js"></script>
 </body>
 
 </html>

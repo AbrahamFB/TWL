@@ -57,7 +57,7 @@ body{
 
 header{
     z-index: 100000;	/*Para posicionar sobre todos los elementos de la página*/
-    height: 850px;	/*Altura*/
+    height: 100vh;	/*Altura*/
     width: 100%;	/*Largo*/
     /*background-image: url("../img/fondo-head/orig_7871.gif");*/
     /*background-image: url("https://correobuap-my.sharepoint.com/personal/abraham_floresb_alumno_buap_mx/Documents/TWL/img/fondo-head/snowman-2082688.jpg");
@@ -592,7 +592,7 @@ h4.p-reconocimiento{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("../img/fondo-contacto/3.jpg");
+    background-image: url("http://drive.google.com/uc?export=view&id=15YZEwukI4LMBeDKYJKy2-DffKBycNfMp");
 
 	background-position: center center;
 }
@@ -642,7 +642,7 @@ h4.p-reconocimiento{
 
 
 form.form_contacto{
-    background-image: url("../img/fondo-contacto/layer.jpg"); 
+    background-image: url("http://drive.google.com/uc?export=view&id=11_nMnhKP_AhtYSyxt3SFn1wpVauXepot"); 
 	background-color: rgba(0,0,0,0.20);
     width: 62%;
     padding: 30px 40px;
